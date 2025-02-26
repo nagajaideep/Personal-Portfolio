@@ -1,31 +1,4 @@
-<<<<<<< HEAD
-/*==================================
-* Author        : "ThemeSine"
-* Template Name :  Browny  HTML Template
-* Version       : 1.0
-==================================== */
 
-/*==================================
-font-family: 'Poppins', sans-serif;
-==================================== */
-
-
-/*=========== TABLE OF CONTENTS ===========
-1.  General css (Reset code)
-2.  Header
-3.  Welcome-hero
-4.  About me 
-5.  Education
-6.  Skill
-7.  Experience
-8.  Profiles
-9.  Portfolio
-10. Clients
-11. Contact
-
-/*-------------------------------------
-		1.General css (Reset code)
---------------------------------------*/
 * {
     padding: 0;
     margin: 0;
@@ -542,16 +515,47 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     margin-top: 15px;
     width: 85%;
     margin-bottom: 37px;
+    position: relative;
 }
 
 .progress-bar {
     background: #b636ff;
     border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0; /* Start at 0 width */
     -webkit-transition: width 1.5s ease-in-out;
     -ms-transition: width 1.5s ease-in-out;
     -moz-transition: width 1.5s ease-in-out;
     -o-transition: width 1.5s ease-in-out;
     transition: width 1.5s ease-in-out;
+}
+
+/* Add specific classes for different skill levels */
+.progress-bar.skill-90 {
+    width: 90%;
+}
+
+.progress-bar.skill-85 {
+    width: 85%;
+}
+
+.progress-bar.skill-50 {
+    width: 50%;
+}
+
+.progress-bar.skill-70 {
+    width: 70%;
+}
+
+.progress-bar.skill-60 {
+    width: 60%;
+}
+
+.progress-bar.skill-97 {
+    width: 97%;
 }
 
 .tooltip {
@@ -1083,7 +1087,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     }
 }
 
-=======
+/* ======= */
 /*==================================
 * Author        : "ThemeSine"
 * Template Name :  Browny  HTML Template
@@ -1426,7 +1430,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 .education-horizontal-timeline .col-sm-4 {padding:0 2px;}
 
 .single-horizontal-timeline .experience-time h3{text-transform: capitalize;}
-.single-horizontal-timeline .experience-time h3 span{text-transform:lowercase;}
+single-horizontal-timeline .experience-time h3 span{text-transform:lowercase;}
 .single-horizontal-timeline .timeline-content h5 {margin: 15px 0;}
 .single-horizontal-timeline p {color: #999fb3;max-width: 335px;}
 
@@ -1483,23 +1487,51 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     text-transform: uppercase;
 }
 .progress {
-    border-radius:3px;
+    border-radius: 3px;
     overflow: visible;
     background: #e6ecf3;
-    height:8px;
+    height: 8px;
     margin-top: 15px;
     width: 85%;
     margin-bottom: 37px;
+    position: relative;
 }
 .progress-bar {
-   background: #b636ff;
+    background: #b636ff;
     border-radius: 3px;
-   -webkit-transition: width 1.5s ease-in-out;
-   -ms-transition: width 1.5s ease-in-out;
-   -moz-transition: width 1.5s ease-in-out;
-   -o-transition: width 1.5s ease-in-out;
-   transition: width 1.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0; /* Start at 0 width */
+    -webkit-transition: width 1.5s ease-in-out;
+    -ms-transition: width 1.5s ease-in-out;
+    -moz-transition: width 1.5s ease-in-out;
+    -o-transition: width 1.5s ease-in-out;
+    transition: width 1.5s ease-in-out;
 }
+
+/* Add specific classes for different skill levels */
+.progress-bar.skill-90 {
+    width: 90%;
+}
+
+.progress-bar.skill-80 {
+    width: 80%;
+}
+
+.progress-bar.skill-75 {
+    width: 75%;
+}
+
+.progress-bar.skill-70 {
+    width: 70%;
+}
+
+.progress-bar.skill-60 {
+    width: 60%;
+}
+
 .tooltip{
    position:relative;
    float:right;
@@ -1676,7 +1708,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     top:0;
 }
 .single-profile:hover .profile-icon-name,.single-profile:hover .profile-txt a>i{color: #fff;}
-.single-profile:hover .profile-border {border:transparent;}
+single-profile:hover .profile-border {border:transparent;}
 /*-------------------------------------
         9. Portfolio
 --------------------------------------*/
@@ -1938,5 +1970,180 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
->>>>>>> a76153475eca29027752630eb0774bfc5a2ec95c
-/*========================Thank you=================
+
+/* Portfolio section enhancements */
+.section-subtitle {
+    color: #999fb3;
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.portfolio-filters {
+    margin-bottom: 40px;
+}
+
+.filter-options {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-options li {
+    margin: 0 15px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    color: #636a82;
+}
+
+.filter-options li.active,
+.filter-options li:hover {
+    background: #b636ff;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(182, 54, 255, 0.3);
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.item:hover img {
+    transform: scale(1.1);
+}
+
+.isotope-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(31, 44, 108, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.item:hover .isotope-overlay {
+    transform: translateY(0);
+}
+
+.project-link {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-link h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.project-link p {
+    color: #f0f0f0;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.view-project {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.view-project:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.view-project i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover .view-project i {
+    transform: translateX(5px);
+}
+
+.project-description {
+    padding: 15px;
+    background: #fff;
+}
+
+.project-description p {
+    font-size: 14px;
+    color: #636a82;
+    margin-bottom: 10px;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tech-stack span {
+    background: #e6ecf3;
+    color: #636a82;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.view-all-projects {
+    margin-top: 50px;
+}
+
+.btn-custom {
+    padding: 12px 25px;
+    background: #b636ff;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(182, 54, 255, 0.3);
+}
+
+.btn-custom i {
+    margin-left: 8px;
+    font-size: 18px;
+}
+
+.btn-custom:hover {
+    background: #9f00ff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(159, 0, 255, 0.4);
+}
