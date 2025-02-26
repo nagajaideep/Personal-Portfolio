@@ -1,0 +1,729 @@
+/* Enhanced Project Section Styling */
+.portfolio .tech-stack span {
+    display: inline-block;
+    background: #f8f9fa;
+    padding: 3px 8px;
+    border-radius: 15px;
+    margin: 3px;
+    font-size: 12px;
+    color: #333;
+    border: 1px solid #e9ecef;
+}
+
+.portfolio .tech-stack span i {
+    margin-right: 4px;
+    color: #5a6268;
+}
+
+.portfolio .isotope-overlay h3 i {
+    margin-right: 8px;
+}
+
+.project-description {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.view-all-projects {
+    margin-top: 40px;
+}
+
+.btn-custom {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #2c3e50;
+    color: #fff;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-custom:hover {
+    background: #1a252f;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.btn-custom i {
+    margin-left: 8px;
+}
+
+/* Contact Section Enhancements */
+.single-contact-btn .contact-btn {
+    position: relative;
+    padding-right: 35px;
+}
+
+.single-contact-btn .contact-btn i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.single-contact-btn .contact-btn:hover i {
+    transform: translateY(-50%) translateX(5px);
+}
+
+.contact-add-head h3 i, .contact-add-head p i, .single-contact-add-info h3 i {
+    margin-right: 10px;
+    color: #6c757d;
+}
+
+/* Profile Section Improvements */
+.single-profile .profile-txt i {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.profile-icon-name {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+/* Add these styles to your existing CSS file */
+
+/* About section enhancements */
+.single-about-add-info h3 i {
+    margin-right: 10px;
+    color: #2c3e50;
+}
+
+.tech-highlights {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-highlights span {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #f8f9fa;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #2c3e50;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.tech-highlights span:hover {
+    background: #2c3e50;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.tech-highlights span i {
+    margin-right: 6px;
+}
+
+.single-about-txt h3 {
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.fa-python:before {
+    content: "\f1cb";
+}
+
+
+.contact-info-row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.single-about-add-info {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 15px;
+    height: 100%;
+    min-height: 110px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.single-about-add-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.single-about-add-info h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.single-about-add-info h3 i {
+    margin-right: 8px;
+    color: #3498db;
+}
+
+.single-about-add-info p {
+    font-size: 14px;
+    word-break: break-word;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .single-about-add-info {
+        margin-bottom: 15px;
+    }
+}
+/* Enhanced Education Section */
+
+.education {
+    background: linear-gradient(rgba(255,255,255,0.97), rgba(255,255,255,0.97)), 
+                url('../images/education-bg.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.education-card {
+    position: relative;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    overflow: hidden;
+    border-top: 5px solid #2c3e50;
+}
+
+.education-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.education-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent 49%, rgba(44, 62, 80, 0.05) 50%, transparent 51%);
+    background-size: 10px 10px;
+    z-index: -1;
+}
+
+.education-icon {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.education .experience-time h2 {
+    color: #3498db;
+    font-weight: 600;
+    margin-bottom: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.education .experience-time h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40%;
+    height: 2px;
+    background: #3498db;
+}
+
+.education .timeline-content .title {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.education .timeline-content .title i {
+    margin-right: 8px;
+    color: #3498db;
+}
+
+.education .timeline-content h5 {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.education .timeline-content h5 i {
+    margin-right: 6px;
+    color: #95a5a6;
+}
+
+.education .timeline-content .description {
+    line-height: 1.7;
+    font-size: 14px;
+    color: #34495e;
+    text-align: justify;
+}
+
+.education-tags, .education-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    gap: 8px;
+}
+
+.education-tags span, .education-highlights span {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 20px;
+    padding: 3px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #2c3e50;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.education-tags span:hover, .education-highlights span:hover {
+    background: #2c3e50;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.education-tags span i, .education-highlights span i {
+    margin-right: 5px;
+    font-size: 11px;
+}
+
+.education-highlights span {
+    background: #f1f9ff;
+    border: 1px solid #d0e6f7;
+}
+
+.education .timeline-horizontal-border {
+    margin: 10px 0;
+    position: relative;
+}
+
+.education .timeline-horizontal-border .fa-circle {
+    color: #3498db;
+}
+
+.education .timeline-horizontal-border .single-timeline-horizontal {
+    display: inline-block;
+    width: 120px;
+    height: 3px;
+    background: #e5e5e5;
+    position: relative;
+    margin-left: 10px;
+}
+
+.education .timeline-horizontal-border .single-timeline-horizontal::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 40%;
+    height: 3px;
+    background: #3498db;
+    animation: progressAnim 3s ease-in-out;
+}
+
+@keyframes progressAnim {
+    0% { width: 0; }
+    100% { width: 40%; }
+}
+
+/* Fix for fa-school (using fa-institution as substitute) */
+.fa-school:before {
+    content: "\f19c";
+}
+/* Enhanced Skills Section */
+
+.skills {
+    background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,255,255,0.97)),
+                url('../images/skills-bg.jpg') center center no-repeat;
+    background-size: cover;
+    padding: 100px 0 60px;
+}
+
+.skills-intro {
+    margin-bottom: 40px;
+}
+
+.skills-intro .lead {
+    font-size: 18px;
+    color: #555;
+    font-weight: 300;
+}
+
+.single-skill-content {
+    position: relative;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    border-top: 4px solid transparent;
+    animation: fadeIn 1s ease;
+}
+
+.single-skill-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.single-skill-content:first-child {
+    border-top-color: #3498db;
+}
+
+.single-skill-content:last-child {
+    border-top-color: #e74c3c;
+}
+
+.technical-skills-heading,
+.professional-skills-heading {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.technical-skills-heading:after,
+.professional-skills-heading:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+}
+
+.technical-skills-heading:after {
+    background: #3498db;
+}
+
+.professional-skills-heading:after {
+    background: #e74c3c;
+}
+
+.technical-skills-heading i,
+.professional-skills-heading i {
+    margin-right: 10px;
+    color: inherit;
+}
+
+.barWrapper {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.barWrapper:last-child {
+    margin-bottom: 0;
+}
+
+.progressText {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #34495e;
+    text-transform: capitalize;
+}
+
+.progressText i {
+    margin-right: 8px;
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+/* Progress Bar Enhancements */
+.progress {
+    height: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow: visible;
+    box-shadow: none;
+    background-image: none;
+}
+
+.progress .progress-bar {
+    position: relative;
+    border-radius: 5px;
+    background-image: linear-gradient(45deg, 
+                      rgba(255, 255, 255, .15) 25%, 
+                      transparent 25%, 
+                      transparent 50%, 
+                      rgba(255, 255, 255, .15) 50%, 
+                      rgba(255, 255, 255, .15) 75%, 
+                      transparent 75%, 
+                      transparent);
+    background-size: 20px 20px;
+    animation: progress-bar-stripes 1s linear infinite;
+    transition: width 1.5s ease;
+}
+
+.progress .skill-count {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    padding: 3px 8px;
+    background: #2c3e50;
+    color: #fff;
+    font-size: 11px;
+    border-radius: 3px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.progress .skill-count:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #2c3e50;
+}
+
+/* Color variations for different skill levels */
+.skill-90 {
+    background-color: #2ecc71;
+}
+
+.skill-85 {
+    background-color: #9b59b6;
+}
+
+.skill-97 {
+    background-color: #e74c3c;
+}
+
+.skill-70 {
+    background-color: #3498db;
+}
+
+.skill-50 {
+    background-color: #f1c40f;
+}
+
+.progress .progress-bar {
+    border-radius: 5px;
+    position: relative;
+    animation: progress-animation 1.5s ease-in-out forwards;
+    background-size: 30px 30px;
+    background-image: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, .15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, .15) 50%,
+        rgba(255, 255, 255, .15) 75%,
+        transparent 75%,
+        transparent
+    );
+    animation: progress-animation 1.5s ease-in-out forwards, 
+               progress-stripes 1s linear infinite;
+}
+
+.progress .skill-count {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    background: #2c3e50;
+    padding: 2px 8px;
+    border-radius: 12px;
+    opacity: 0;
+    transform: translateX(-50%);
+    animation: fade-in 0.6s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+
+.progress .skill-count:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #2c3e50;
+}
+
+.skill-70 {
+    width: 70%;
+    background-color: #3498db;
+}
+
+.skill-90 {
+    width: 90%;
+    background-color: #2ecc71;
+}
+
+.skill-50 {
+    width: 50%;
+    background-color: #f1c40f;
+}
+
+.skill-85 {
+    width: 85%;
+    background-color: #9b59b6;
+}
+
+.skill-97 {
+    width: 97%;
+    background-color: #e74c3c;
+}
+
+.single-progress-txt h3 {
+    display: none;
+}
+
+.additional-skills {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.skill-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.skill-badges span {
+    background: #fff;
+    border-radius: 25px;
+    padding: 8px 16px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    font-weight: 500;
+    color: #2c3e50;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.skill-badges span:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    background: #2c3e50;
+    color: white;
+}
+
+.skill-badges span i {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+@keyframes progress-animation {
+    0% { width: 0; }
+    100% { width: attr(data-percent); }
+}
+
+@keyframes progress-stripes {
+    0% { background-position: 0 0; }
+    100% { background-position: 30px 0; }
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Animated stripes for progress bars */
+@keyframes progress-bar-stripes {
+    from { background-position: 40px 0; }
+    to { background-position: 0 0; }
+}
+
+/* Fix for Progress Bars */
+.progress {
+    background-color: #f5f5f5;
+    height: 10px;
+    margin-bottom: 20px;
+    overflow: visible;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+.progress .progress-bar {
+    position: relative;
+    border-radius: 4px;
+    transition: width 1s ease;
+    height: 100%;
+}
+
+.progress-bar.skill-50 { width: 50% !important; background-color: #f39c12; }
+.progress-bar.skill-70 { width: 70% !important; background-color: #3498db; }
+.progress-bar.skill-85 { width: 85% !important; background-color: #9b59b6; }
+.progress-bar.skill-90 { width: 90% !important; background-color: #2ecc71; }
+.progress-bar.skill-97 { width: 97% !important; background-color: #e74c3c; }
+
+.skill-count {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    font-size: 10px;
+    font-weight: bold;
+    background: #34495e;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+/* Hide the redundant percentage display */
+.single-progress-txt h3 {
+    display: none;
+}
+
+/* Force display for Safari and older browsers */
+.single-progress-txt .progress {
+    display: block !important;
+}
+
+.single-progress-txt .progress .progress-bar {
+    display: block !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .single-skill-content {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .technical-skills-heading,
+    .professional-skills-heading {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .barWrapper {
+        margin-bottom: 20px;
+    }
+}
